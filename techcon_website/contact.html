@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - TechCon 2024</title>
+    <title>Contact Us</title>
 </head>
 <body>
     <!-- Header Section -->
@@ -13,7 +13,7 @@
             <ul>
                 <li><a href="index.html" title="Home Page">Home</a></li>
                 <li><a href="about.html" title="About TechCon 2024">About</a></li>
-                <li><a href="schedule.html" title="Schedule of Events">Schedule</a></li>
+                <li><a href="schedule.html" title="Event Schedule">Schedule</a></li>
                 <li><a href="register.html" title="Register for TechCon 2024">Register</a></li>
             </ul>
         </nav>
@@ -21,54 +21,47 @@
 
     <!-- Main Content Section -->
     <main>
-        <section>
-            <h2>Contact Information</h2>
-            <p>If you have any questions or need further assistance, feel free to contact us via email or follow us on social media:</p>
-            
-            <!-- Email Contact -->
-            <p>Email: <a href="mailto:contact@techcon2024.com">contact@techcon2024.com</a></p>
+        <h2>Get in Touch</h2>
 
-            <!-- Social Media Links -->
-            <h3>Follow Us:</h3>
+        <!-- Contact Details -->
+        <section>
+            <h3>Contact Information</h3>
+            <p>Email us: <a href="mailto:email@example.com">email@example.com</a></p>
+            <p>Follow us on social media:</p>
             <ul>
-                <li><a href="https://facebook.com/TechCon2024" target="_blank">Facebook</a></li>
                 <li><a href="https://twitter.com/TechCon2024" target="_blank">Twitter</a></li>
-                <li><a href="https://instagram.com/TechCon2024" target="_blank">Instagram</a></li>
+                <li><a href="https://facebook.com/TechCon2024" target="_blank">Facebook</a></li>
                 <li><a href="https://linkedin.com/company/TechCon2024" target="_blank">LinkedIn</a></li>
             </ul>
-            
-            <!-- Embedded Google Map -->
-            <h3>Our Location</h3>
-            <p>TechCon 2024 will be held at the following venue:</p>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=...yourVenueLocation..."
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
 
-        <!-- Contact Us Form Section -->
+        <!-- Embedded Map -->
         <section>
-            <h2>Contact Us</h2>
-            <p>Fill out the form below, and we will get back to you as soon as possible.</p>
-            <form action="submit_contact.php" method="POST" novalidate>
-                <!-- Name Field -->
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required aria-required="true" placeholder="Enter your full name">
+            <h3>Our Location</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345094314!2d-122.41941648468191!3d37.77492927975959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064c2a97b3d%3A0xb921df15e9b5dbd8!2sMoscone%20Center!5e0!3m2!1sen!2sus!4v1697901234567!5m2!1sen!2sus" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
 
-                <br><br>
-
-                <!-- Email Field -->
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required aria-required="true" placeholder="Enter your email address">
-
-                <br><br>
-
-                <!-- Message Field -->
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="4" required aria-required="true" placeholder="Enter your message here"></textarea>
-
-                <br><br>
-
-                <!-- Submit Button -->
+        <!-- Contact Form -->
+        <section>
+            <h3>Send Us a Message</h3>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
                 <button type="submit">Send Message</button>
             </form>
         </section>
